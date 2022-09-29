@@ -16,11 +16,15 @@ public class ContaBancaria {
 	
 	public boolean sacar(double valor, int senha) {
 		
-		if(this.saldo>valor && senha == this.senha) {
+		if(this.saldo>valor && verificasenha(senha)) {
 			this.saldo -= valor;
 			return true;
 		}else
 			return false;
+	}
+	
+	protected boolean verificasenha(int senha) {
+		return this.senha == senha;
 	}
 	
 	public void depositar(double valor) {
@@ -31,6 +35,6 @@ public class ContaBancaria {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Conta Bancaria: \nnumero: " + this.numero + "\nsenha: " + this.senha + "\nNome Titular: " + this.nometitular + "\nSaldo: " + this.saldo +"\n_______________________";
+		return "\n_______________________\nConta Bancaria: \nnumero: " + this.numero + "\nsenha: " + this.senha + "\nNome Titular: " + this.nometitular + "\nSaldo: " + this.saldo;
 	}
 }
