@@ -32,6 +32,11 @@ public class ContaBancaria {
 			saldo += valor;
 	}
 	
+	
+	public static double imprimirsaldo(double saldo){
+		return saldo;
+	} 
+	
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

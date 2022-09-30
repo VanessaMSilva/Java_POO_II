@@ -1,15 +1,28 @@
 package Projeto_1_Parte_2;
 
+import java.util.ArrayList;
+
 public class Projeto_1_Parte_2 {
 	public static void main(String[] args) {
 		
-		Cliente c;
-		c = new ClientePF("Vanessa","machado","marajo, 256","12345678912");
+		ArrayList <Cliente> c = new ArrayList<>();
+		ArrayList <ContaBancaria> b = new ArrayList<>();
+		
+		Cliente cli;
+		cli = new ClientePF("Vanessa","machado","marajo, 256","12345678912");
+		c.add(cli);
+		
 		//Instanciar 1 conta corrente (CC) com R$ 1000,00
-		ContaBancaria cc = new ContaCorrente(12,34,c,100);
+		ContaBancaria cc = new ContaCorrente(12,34,c.get(0),100);
 		cc.depositar(1000);
+		b.add(cc);
+		
 		//Instanciar 1 conta poupança (CP) com R$ 500,00
-		ContaBancaria cp = new ContaPoupanca(56,78,c,0.5);
+		cli = new ClientePJ("Amanda","Pinheiro","centro","227856");
+		c.add(cli);
+		ContaBancaria cp = new ContaPoupanca(56,78,c.get(1),0.5);
+		b.add(cp);
+		
 		cp.depositar(500);
 		//Depositar R$ 390,00 na CC
 		cc.depositar(390);
@@ -32,5 +45,7 @@ public class Projeto_1_Parte_2 {
 			else
 				System.out.println("Nao Sacou\n");
 			System.out.println(cp.toString());
+			Arquivo.escreverTexto("arquivo.txt", cc.toString()+ cp.toString());
 	}
+	
 }

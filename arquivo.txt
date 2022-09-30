@@ -1,0 +1,53 @@
+Texte txt
+_______________________
+Conta Bancaria: 
+numero: 12
+senha: 34
+Nome Titular: machado
+Saldo: 1350.0
+_______________________
+Conta Bancaria: 
+numero: 56
+senha: 78
+Nome Titular: machado
+Saldo: 1350.0
+Taxa rendimento: 0.5
+_______________________
+Conta Bancaria: 
+numero: 12
+senha: 34
+Nome Titular: machado
+Saldo: 1350.0
+_______________________
+Conta Bancaria: 
+numero: 56
+senha: 78
+Nome Titular: machado
+Saldo: 1350.0
+Taxa rendimento: 0.5
+_______________________
+Conta Bancaria: 
+numero: 12
+senha: 34
+Nome Titular: machado
+Saldo: 1350.0
+_______________________
+Conta Bancaria: 
+numero: 56
+senha: 78
+Nome Titular: Pinheiro
+Saldo: 1350.0
+Taxa rendimento: 0.5
+_______________________
+Conta Bancaria: 
+numero: 12
+senha: 34
+Nome Titular: machado
+Saldo: 1350.0
+_______________________
+Conta Bancaria: 
+numero: 56
+senha: 78
+Nome Titular: Pinheiro
+Saldo: 1350.0
+Taxa rendimento: 0.5
