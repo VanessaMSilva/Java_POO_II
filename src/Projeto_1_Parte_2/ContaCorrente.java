@@ -1,6 +1,6 @@
 package Projeto_1_Parte_2;
 
-public class ContaCorrente extends ContaBancaria{
+public class ContaCorrente extends ContaBancaria implements Autenticavel{
 	public double limiteespecial;
 	
 	public ContaCorrente(int numero, int senha, Cliente cliente, double limiteespecial){
@@ -20,5 +20,11 @@ public class ContaCorrente extends ContaBancaria{
 		}
 		return false;
 		
+	}
+
+	@Override
+	public double getValorImposto() {
+		// TODO Auto-generated method stub
+		return 0.01*saldo;
 	}
 }
