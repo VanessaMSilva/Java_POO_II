@@ -13,6 +13,7 @@ public class Gerenciadora {
     ArrayList<Cliente> cliente = new ArrayList<>();
 
     public Gerenciadora() {
+        
         ClientePJ c = new ClientePJ("vanessa", "silva", "sao jorge,24", "14523698");
         cliente.add(c);
         ClientePF c1 = new ClientePF("ana", "catarina", "boa vista,56", "14523698745");
@@ -50,6 +51,7 @@ public class Gerenciadora {
             System.out.println("Nao Sacou\n");
         }
         System.out.println(cp.toString());
+        escreverBin("cadastroConta.bin");
     }
 
     public void escreverBin(String nomeArq) {
@@ -68,10 +70,9 @@ public class Gerenciadora {
     public void lerBi(String nomeArq) {
         try {
             FileInputStream lerArq = new FileInputStream(nomeArq);
-            ObjectInputStream lerEntrada = new ObjectInputStream(lerArq);
-
-            conta = (ArrayList<ContaBancaria>) lerEntrada.readObject();
-            lerEntrada.close();
+            try (ObjectInputStream lerEntrada = new ObjectInputStream(lerArq)) {
+                conta = (ArrayList<ContaBancaria>) lerEntrada.readObject();
+            }
 
         } catch (IOException erro) {
             JOptionPane.showMessageDialog(null, "Erro!!!");

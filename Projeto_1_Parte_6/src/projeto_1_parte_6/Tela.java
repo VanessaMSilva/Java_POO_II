@@ -10,13 +10,15 @@ package projeto_1_parte_6;
  * @author vanes
  */
 public class Tela extends javax.swing.JFrame {
-    private Gerenciadora G = new Gerenciadora();
+    private Gerenciadora G;
     /**
      * Creates new form Tela
      */
     public Tela() {
+        G = new Gerenciadora();
+        G.lerBi("cadastroConta.bin");
         initComponents();
-    
+        
     }
 
     /**
