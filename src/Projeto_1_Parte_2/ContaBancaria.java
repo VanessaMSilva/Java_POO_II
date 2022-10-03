@@ -1,7 +1,8 @@
 package Projeto_1_Parte_2;
 
 
-public class ContaBancaria {
+public abstract class ContaBancaria {
+	
 	public int numero;
 	private int senha;
 	protected double saldo;
@@ -33,9 +34,9 @@ public class ContaBancaria {
 	}
 	
 	
-	public static double imprimirsaldo(double saldo){
-		return saldo;
-	} 
+	public static String imprimirsaldo(double saldo) {
+		return "Saldo: R$" + saldo;
+	}
 	
 	@Override
 	public String toString() {
