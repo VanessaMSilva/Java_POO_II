@@ -9,13 +9,6 @@ package projeto_1_parte_6;
  *
  * @author vanes
  */
-public class Projeto_1_Parte_6 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public interface Autenticavel {
+    public double getValorImposto();
 }
