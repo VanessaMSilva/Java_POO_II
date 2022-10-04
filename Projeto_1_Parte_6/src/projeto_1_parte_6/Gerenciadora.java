@@ -13,8 +13,13 @@ public class Gerenciadora {
     ArrayList<Cliente> cliente = new ArrayList<>();
 
     public Gerenciadora() {
-        
-        ClientePJ c = new ClientePJ("vanessa", "silva", "sao jorge,24", "14523698");
+        instanciar();
+        escreverBin("cadastroConta.bin");
+        System.out.println(conta.get(0).toString());
+    }
+    
+    public void instanciar(){
+         ClientePJ c = new ClientePJ("vanessa", "silva", "sao jorge,24", "14523698");
         cliente.add(c);
         ClientePF c1 = new ClientePF("ana", "catarina", "boa vista,56", "14523698745");
         cliente.add(c1);
@@ -51,7 +56,6 @@ public class Gerenciadora {
             System.out.println("Nao Sacou\n");
         }
         System.out.println(cp.toString());
-        escreverBin("cadastroConta.bin");
     }
 
     public void escreverBin(String nomeArq) {
@@ -84,7 +88,7 @@ public class Gerenciadora {
 
     public void carregarArquivo(String arq) {
         try {
-            arquivo = new File(arquivo + ".txt");
+            arquivo = new File(arq + ".txt");
             if (arquivo.exists() == false) {
                 arquivo.createNewFile();
             }
@@ -94,11 +98,12 @@ public class Gerenciadora {
     }
 
     public void escreverArquivo(String arq) {
-
+        
         try {
             FileWriter fw = new FileWriter(arquivo,true);
             BufferedWriter out = new BufferedWriter(fw);
-
+            //PrintWriter out = new PrintWriter(arq);
+            //out.println(out);
             out.append(arq + "\n");
             out.flush();
             out.close();
@@ -126,8 +131,7 @@ public class Gerenciadora {
         } catch (Exception e) {
             e.printStackTrace();
             return null;
-        }
-        
+        }        
     }
 
 }

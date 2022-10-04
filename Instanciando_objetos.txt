@@ -1,0 +1,37 @@
+ ClientePJ c = new ClientePJ("vanessa", "silva", "sao jorge,24", "14523698");
+        cliente.add(c);
+        ClientePF c1 = new ClientePF("ana", "catarina", "boa vista,56", "14523698745");
+        cliente.add(c1);
+
+        ContaBancaria cc = new ContaCorrente(12, 34, cliente.get(0), 100); //Instanciar 1 conta corrente (CC) com R$ 1000,00
+        conta.add(cc);
+
+        conta.get(0).depositar(1000);
+
+        ContaBancaria cp = new ContaPoupanca(56, 78, cliente.get(1), 0.5);//Instanciar 1 conta poupança (CP) com R$ 500,00
+        conta.add(cp);
+        conta.get(1).depositar(500);
+
+        conta.get(0).depositar(390);//Depositar R$ 390,00 na CC
+
+        System.out.println(cc.toString());//Imprimir saldo da CC
+
+        conta.get(1).depositar(900);//Depositar R$ 900,00 na CP
+
+        System.out.println(conta.get(1).toString());//Imprimir saldo da CP
+
+        if (conta.get(0).sacar(40, 34))//Sacar R$ 40,00 da CC
+        {
+            System.out.println("Sacou");
+        } else {
+            System.out.println("Nao Sacou\n");
+        }
+        System.out.println(cc.toString());
+
+        if (conta.get(1).sacar(50, 78))//Sacar R$ 50,00 da CP
+        {
+            System.out.println("Sacou");
+        } else {
+            System.out.println("Nao Sacou\n");
+        }
+        System.out.println(cp.toString());

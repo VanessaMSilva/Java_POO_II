@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 package projeto_1_parte_6;
-
-/**
- *
- * @author vanes
- */
 public interface Autenticavel {
     public double getValorImposto();
 }
