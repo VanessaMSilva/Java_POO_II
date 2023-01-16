@@ -122,8 +122,9 @@ public class Gerenciadora {
             String texto = "";
             String linha = bf.readLine();
             
+            
             while(linha != null){
-                texto += linha;
+                texto += linha + "\n";
                 linha = bf.readLine();
             }
            return texto;
