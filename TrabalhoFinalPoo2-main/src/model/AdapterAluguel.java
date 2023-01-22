@@ -37,8 +37,8 @@ public class AdapterAluguel implements Passagem{
     
     @Override
     public void calcularPreco(int destino, int empresa) {
+        calcularTempo(destino);
         this.preco = ac.custoAluguel(empresa) + ac.precoDaGasolina(5.12f);
-;
     }
 
     @Override
