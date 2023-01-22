@@ -27,31 +27,37 @@ public class AluguelCarro {
             //Sao paulo
             case 1:
                 this.tempo = 1;
+                break;
             //Fortaleza
             case 2:
                 this.tempo = 10;
-
+                break;
             //Paraguai:
             case 3:
                 this.tempo = 5;
+                break;
         }
-        return tempo;
+        
+        return this.tempo;
     }
 
     //calcula o preço de viagem a partir do destino
-    public float precoDaGasolina(float gasolina) {
-        this.precoGasolina = (float) (this.distancia * 5.0);
+    public float precoDaGasolina(int destino) {
+        this.precoGasolina = (float) (this.calcularDistancia(destino) * 5.0);
         return this.precoGasolina;
     }
 
-    public float custoAluguel(int empresa) {
+    public float custoAluguel(int destino, int empresa) {
 
         switch (empresa) {
             case 1:
-                this.preçoAluguel = (float) (12 * tempo);
+                this.preçoAluguel = (float) (12 * this.Tempo(destino));
+                break;
             case 2:
-                this.preçoAluguel = (float) (15 * tempo);
+                this.preçoAluguel = (float) (15 * this.Tempo(destino));
+                break;
         }
+        System.out.println("PreçoAlugel: " + this.preçoAluguel);
         return this.preçoAluguel;
 
     }
@@ -61,13 +67,16 @@ public class AluguelCarro {
         switch (destino) {
             //Sao paulo
             case 1:
-                this.distancia = 42;
+                this.distancia = (float) 42;
+                break;
             //Fortaleza
             case 2:
                 this.distancia = (float) 420;
+                break;
             //Paraguai:
             case 3:
                 this.distancia = (float) 79;
+                break;
 
         }
         return this.distancia;

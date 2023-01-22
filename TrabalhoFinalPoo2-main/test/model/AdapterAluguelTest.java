@@ -40,10 +40,7 @@ public class AdapterAluguelTest {
     @After
     public void tearDown() {
     }
-
-    /**
-     * Test of gerarPassagem method, of class AdapterAluguel.
-     */
+    
     @Test
     public void testGerarPassagem() {
         System.out.println("gerarPassagem");
@@ -56,73 +53,66 @@ public class AdapterAluguelTest {
         Passagem result = a.gerarPassagem(empresa, destino, nome, cpf);
         assertNotEquals(expResult, result);
     }
-
     
-    @Test
-    public void testCalcularPreco() {
-        int empresa = 1;
-        
-        a.calcularPreco(1, empresa);
-        assertTrue(a.getPreco()==222f);
-        /*a.calcularPreco(2, empresa);
-        assertTrue(a.getPreco()==0);
-        a.calcularPreco(3, empresa);
-        assertTrue(a.getPreco()==0);
-        
-        empresa = 2;
-        
-        a.calcularPreco(1, empresa);
-        assertTrue(a.getPreco()==0);
-        a.calcularPreco(2, empresa);
-        assertTrue(a.getPreco()==0);
-        a.calcularPreco(3, empresa);
-        assertTrue(a.getPreco()==0);*/
-    }
-
-    /**
-     * Test of calcularDistancia method, of class AdapterAluguel.
-     */
-    @Test
-    public void testCalcularDistancia() {
-        System.out.println("calcularDistancia");
-        int destino = 0;
-        AdapterAluguel instance = new AdapterAluguel();
-        instance.calcularDistancia(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of calcularTempo method, of class AdapterAluguel.
-     */
+    
     @Test
     public void testCalcularTempo() {
         System.out.println("calcularTempo");
-        int destino = 0;
-        AdapterAluguel instance = new AdapterAluguel();
-        instance.calcularTempo(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
+        a.calcularTempo(1);
+        assertTrue(a.getTempo()==1);
+        a.calcularTempo(2);
+        assertTrue(a.getTempo()==10);
+        a.calcularTempo(3);
+        assertTrue(a.getTempo()==5);
     }
 
-    /**
-     * Test of gerarId method, of class AdapterAluguel.
-     */
     @Test
+    public void testCalcularDistancia() {
+        System.out.println("calcularDistancia");
+
+        a.calcularDistancia(1);        
+        assertTrue(42 == a.getDistancia());
+        a.calcularDistancia(2);        
+        assertTrue(420 == a.getDistancia());
+        a.calcularDistancia(3);        
+        assertTrue(79 == a.getDistancia());
+    }
+    
+    @Test
+    public void testCalcularPreco() {
+        System.out.println("gerarPassagem");
+
+        a.calcularPreco(1, 1);
+        assertTrue(222==a.getPreco());
+        a.calcularPreco(2, 1);
+        assertTrue(2220==a.getPreco());
+        a.calcularPreco(3, 1);
+        assertTrue(455==a.getPreco());
+        
+        a.calcularPreco(1, 2);
+        assertTrue(225==a.getPreco());
+        a.calcularPreco(2, 2);
+        assertTrue(2250==a.getPreco());
+        a.calcularPreco(3, 2);
+        assertTrue(470==a.getPreco());
+        
+    }
+
+   @Test
     public void testGerarId() {
         System.out.println("gerarId");
         AdapterAluguel instance = new AdapterAluguel();
         UUID expResult = null;
         UUID result = instance.gerarId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotEquals(expResult, result);
+      
     }
 
     /**
      * Test of getId method, of class AdapterAluguel.
      */
-    @Test
+    /*@Test
     public void testGetId() {
         System.out.println("getId");
         AdapterAluguel instance = new AdapterAluguel();
@@ -136,7 +126,7 @@ public class AdapterAluguelTest {
     /**
      * Test of getNome method, of class AdapterAluguel.
      */
-    @Test
+    /*@Test
     public void testGetNome() {
         System.out.println("getNome");
         AdapterAluguel instance = new AdapterAluguel();
@@ -150,7 +140,7 @@ public class AdapterAluguelTest {
     /**
      * Test of getCpf method, of class AdapterAluguel.
      */
-    @Test
+    /*@Test
     public void testGetCpf() {
         System.out.println("getCpf");
         AdapterAluguel instance = new AdapterAluguel();
@@ -164,7 +154,7 @@ public class AdapterAluguelTest {
     /**
      * Test of getTempo method, of class AdapterAluguel.
      */
-    @Test
+    /*@Test
     public void testGetTempo() {
         System.out.println("getTempo");
         AdapterAluguel instance = new AdapterAluguel();
@@ -178,7 +168,7 @@ public class AdapterAluguelTest {
     /**
      * Test of getDistancia method, of class AdapterAluguel.
      */
-    @Test
+    /*@Test
     public void testGetDistancia() {
         System.out.println("getDistancia");
         AdapterAluguel instance = new AdapterAluguel();
@@ -192,7 +182,7 @@ public class AdapterAluguelTest {
     /**
      * Test of getPreco method, of class AdapterAluguel.
      */
-    @Test
+    /*@Test
     public void testGetPreco() {
         System.out.println("getPreco");
         AdapterAluguel instance = new AdapterAluguel();
@@ -201,6 +191,6 @@ public class AdapterAluguelTest {
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
     
 }

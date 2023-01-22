@@ -20,12 +20,12 @@ public class AdapterAluguel implements Passagem{
     private int cpf;
     private UUID id;
     private int empresa;
-    private AluguelCarro ac;
+    private AluguelCarro ac = new AluguelCarro();
     
     
      @Override
     public Passagem gerarPassagem(int empresa, int destino, String nome, int cpf) {
-        ac = new AluguelCarro();
+       
         calcularTempo(destino);
         calcularPreco(destino, empresa);
         calcularDistancia(destino);
@@ -36,9 +36,7 @@ public class AdapterAluguel implements Passagem{
     
     @Override
     public void calcularPreco(int destino, int empresa) {
-        calcularTempo(destino);
-        calcularDistancia(destino);
-        this.preco = ac.custoAluguel(empresa) + ac.precoDaGasolina(5.12f);
+        this.preco = ac.custoAluguel(destino, empresa) + ac.precoDaGasolina(destino);
     }
 
     @Override
