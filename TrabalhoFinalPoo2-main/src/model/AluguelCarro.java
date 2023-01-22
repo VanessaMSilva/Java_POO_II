@@ -27,24 +27,20 @@ public class AluguelCarro {
             //Sao paulo
             case 1:
                 this.tempo = 1;
-                return tempo;
-
             //Fortaleza
             case 2:
                 this.tempo = 10;
-                return tempo;
 
             //Paraguai:
             case 3:
                 this.tempo = 5;
-                return tempo;
         }
-        return 0;
+        return tempo;
     }
 
     //calcula o preço de viagem a partir do destino
     public float precoDaGasolina(float gasolina) {
-        this.precoGasolina = (float) (this.distancia * 5.12);
+        this.precoGasolina = (float) (this.distancia * 5.0);
         return this.precoGasolina;
     }
 
@@ -52,14 +48,12 @@ public class AluguelCarro {
 
         switch (empresa) {
             case 1:
-                this.preçoAluguel = (float) (1.2 * tempo);
-                return this.preçoAluguel;
+                this.preçoAluguel = (float) (12 * tempo);
             case 2:
-                this.preçoAluguel = (float) (1.5 * tempo);
-
-                return this.preçoAluguel;
+                this.preçoAluguel = (float) (15 * tempo);
         }
-        return 0;
+        return this.preçoAluguel;
+
     }
 
     //calcula a distancia de viagem a partir do destino
@@ -67,17 +61,16 @@ public class AluguelCarro {
         switch (destino) {
             //Sao paulo
             case 1:
-                return this.distancia = 42;
-
+                this.distancia = 42;
             //Fortaleza
             case 2:
-                return this.distancia = (float) 420;
+                this.distancia = (float) 420;
             //Paraguai:
             case 3:
-                return this.distancia = (float) 79;
+                this.distancia = (float) 79;
 
         }
-        return 0;
+        return this.distancia;
     }
 
     public UUID numeroDeAluguel() {

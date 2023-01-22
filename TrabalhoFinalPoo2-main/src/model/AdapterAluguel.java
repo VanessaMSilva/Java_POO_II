@@ -30,7 +30,6 @@ public class AdapterAluguel implements Passagem{
         calcularPreco(destino, empresa);
         calcularDistancia(destino);
         this.id = gerarId();
-        
         return this;
     }
     
@@ -38,6 +37,7 @@ public class AdapterAluguel implements Passagem{
     @Override
     public void calcularPreco(int destino, int empresa) {
         calcularTempo(destino);
+        calcularDistancia(destino);
         this.preco = ac.custoAluguel(empresa) + ac.precoDaGasolina(5.12f);
     }
 
