@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="9" hostname="LAPTOP-8BGFR8LA" name="model.PassagemAviaoTest" skipped="0" tests="13" time="0.32" timestamp="2023-01-22T11:41:39">
+<testsuite errors="0" failures="8" hostname="LAPTOP-8BGFR8LA" name="model.PassagemBarcoTest" skipped="0" tests="13" time="0.3" timestamp="2023-01-22T11:46:09">
   <properties>
     <property name="netbeans.autoupdate.country" value="BR" />
     <property name="javafx.binarycss" value="false" />
     <property name="javac.test.classpath" value="C:\Program Files\Java\jdk1.8.0_111\jre/lib/javaws.jar:C:\Program Files\Java\jdk1.8.0_111\jre/lib/deploy.jar:C:\Program Files\Java\jdk1.8.0_111\jre/lib/plugin.jar:build/classes:C:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="manifest.custom.codebase" value="*" />
-    <property name="javac.includes" value="model/PassagemAviaoTest.java" />
+    <property name="javac.includes" value="model/PassagemBarcoTest.java" />
     <property name="ant.core.lib" value="C:\Program Files\NetBeans 8.2\extide\ant\lib\ant.jar" />
     <property name="javadoc.windowtitle" value="" />
     <property name="javafx.preloader.enabled" value="false" />
@@ -32,7 +32,7 @@
     <property name="libs.hamcrest.classpath" value="C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="libs.javac-api.javadoc" value="" />
     <property name="os.name" value="Windows 10" />
-    <property name="test.class" value="model.PassagemAviaoTest" />
+    <property name="test.class" value="model.PassagemBarcoTest" />
     <property name="libs.beans-binding.classpath" value="C:\Program Files\NetBeans 8.2\java\modules\ext\beansbinding-1.2.1.jar" />
     <property name="ap.proc.none.internal" value="" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
@@ -46,7 +46,7 @@
     <property name="user.name" value="vanes" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner model.PassagemAviaoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\test\results\TEST-model.PassagemAviaoTest.xml crashfile=C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\junitvmwatcher1889255777673596624.properties propsfile=C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\junit1447376279239088450.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner model.PassagemBarcoTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\test\results\TEST-model.PassagemBarcoTest.xml crashfile=C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\junitvmwatcher1862062056988088052.properties propsfile=C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\junit6528337528167803981.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -69,7 +69,7 @@
     <property name="javac.modulepath" value="" />
     <property name="javafx.deploy.includeDT" value="true" />
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed" />
-    <property name="test.includes" value="model/PassagemAviaoTest.java" />
+    <property name="test.includes" value="model/PassagemBarcoTest.java" />
     <property name="netbeans.dynamic.classpath" value="C:\Users\vanes\AppData\Roaming\NetBeans\8.2\core\org-openide-filesystems.jar;C:\Users\vanes\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_ja.jar;C:\Users\vanes\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_pt_BR.jar;C:\Users\vanes\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_ru.jar;C:\Users\vanes\AppData\Roaming\NetBeans\8.2\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\asm-all-5.0.1.jar;C:\Program Files\NetBeans 8.2\platform\core\core-base.jar;C:\Program Files\NetBeans 8.2\platform\core\core.jar;C:\Program Files\NetBeans 8.2\platform\core\org-netbeans-libs-asm.jar;C:\Program Files\NetBeans 8.2\platform\core\org-openide-filesystems-compat8.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_zh_CN.jar;C:\Program Files\NetBeans 8.2\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
     <property name="jnlp.enabled" value="false" />
     <property name="java.vm.specification.version" value="1.8" />
@@ -84,7 +84,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\null508872149" />
+    <property name="javac.includesfile.binary" value="C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\null573721837" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="javac.test.processorpath" value="C:\Program Files\Java\jdk1.8.0_111\jre/lib/javaws.jar:C:\Program Files\Java\jdk1.8.0_111\jre/lib/deploy.jar:C:\Program Files\Java\jdk1.8.0_111\jre/lib/plugin.jar:build/classes:C:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="netbeans.buildnumber" value="201705191307" />
@@ -96,7 +96,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="libs.hibernate4-persistencemodelgen.javadoc" value="" />
     <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans 8.2\ide\docs\jaxb-api-doc.zip" />
-    <property name="javac.includes.binary" value="C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\test\classes\model\PassagemAviaoTest.class" />
+    <property name="javac.includes.binary" value="C:\Users\vanes\OneDrive\Documentos\Java\Nova pasta\Java_POO_II\TrabalhoFinalPoo2-main\build\test\classes\model\PassagemBarcoTest.class" />
     <property name="ant.home" value="C:\Program Files\NetBeans 8.2\extide\ant" />
     <property name="libs.junit_4.src" value="C:\Program Files\NetBeans 8.2\platform\docs\junit-4.12-sources.jar" />
     <property name="javafx.run.height" value="600" />
@@ -348,65 +348,56 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="model.PassagemAviaoTest" name="testGetPassagem" time="0.006">
-    <failure message="expected:&lt;null&gt; but was:&lt;ID: null&#xa;CPF: 0&#xa;Nome: null&#xa;Tempo: 0hrs&#xa;Distancia: 0.0 km&#xa;Preco: R$0.0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;null&gt; but was:&lt;ID: null
-CPF: 0
-Nome: null
-Tempo: 0hrs
-Distancia: 0.0 km
-Preco: R$0.0&gt;
-	at model.PassagemAviaoTest.testGetPassagem(PassagemAviaoTest.java:119)
-</failure>
-  </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testGetPreco" time="0.001">
+  <testcase classname="model.PassagemBarcoTest" name="testGetPassagem" time="0.003" />
+  <testcase classname="model.PassagemBarcoTest" name="testGetPreco" time="0.003">
     <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at model.PassagemAviaoTest.testGetPreco(PassagemAviaoTest.java:163)
+	at model.PassagemBarcoTest.testGetPreco(PassagemBarcoTest.java:166)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testGetTempo" time="0.001">
+  <testcase classname="model.PassagemBarcoTest" name="testGetTempo" time="0.001">
     <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at model.PassagemAviaoTest.testGetTempo(PassagemAviaoTest.java:191)
+	at model.PassagemBarcoTest.testGetTempo(PassagemBarcoTest.java:194)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testGerarPassagem" time="0.236" />
-  <testcase classname="model.PassagemAviaoTest" name="testGetId" time="0.001">
+  <testcase classname="model.PassagemBarcoTest" name="testGerarPassagem" time="0.21" />
+  <testcase classname="model.PassagemBarcoTest" name="testGetId" time="0.001">
     <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at model.PassagemAviaoTest.testGetId(PassagemAviaoTest.java:233)
+	at model.PassagemBarcoTest.testGetId(PassagemBarcoTest.java:236)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testToString" time="0.004">
+  <testcase classname="model.PassagemBarcoTest" name="testToString" time="0.002">
     <failure message="expected:&lt;[]&gt; but was:&lt;[ID: null&#xa;CPF: 0&#xa;Nome: null&#xa;Tempo: 0hrs&#xa;Distancia: 0.0 km&#xa;Preco: R$0.0]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[]&gt; but was:&lt;[ID: null
 CPF: 0
 Nome: null
 Tempo: 0hrs
 Distancia: 0.0 km
 Preco: R$0.0]&gt;
-	at model.PassagemAviaoTest.testToString(PassagemAviaoTest.java:147)
+	at model.PassagemBarcoTest.testToString(PassagemBarcoTest.java:150)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testGerarId" time="0.001">
-    <failure message="expected:&lt;null&gt; but was:&lt;b0c12a82-823a-4e13-98c7-985716f4e243&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;null&gt; but was:&lt;b0c12a82-823a-4e13-98c7-985716f4e243&gt;
-	at model.PassagemAviaoTest.testGerarId(PassagemAviaoTest.java:133)
+  <testcase classname="model.PassagemBarcoTest" name="testGerarId" time="0.001">
+    <failure message="expected:&lt;null&gt; but was:&lt;22e840b3-6d06-4c77-bd64-d65c9fac5143&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;null&gt; but was:&lt;22e840b3-6d06-4c77-bd64-d65c9fac5143&gt;
+	at model.PassagemBarcoTest.testGerarId(PassagemBarcoTest.java:136)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testGetNome" time="0.001">
+  <testcase classname="model.PassagemBarcoTest" name="testGetNome" time="0.0">
     <failure message="expected:&lt;&gt; but was:&lt;null&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;&gt; but was:&lt;null&gt;
-	at model.PassagemAviaoTest.testGetNome(PassagemAviaoTest.java:203)
+	at model.PassagemBarcoTest.testGetNome(PassagemBarcoTest.java:206)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testCalcularPreco" time="0.001" />
-  <testcase classname="model.PassagemAviaoTest" name="testCalcularTempo" time="0.0" />
-  <testcase classname="model.PassagemAviaoTest" name="testGetCpf" time="0.002">
+  <testcase classname="model.PassagemBarcoTest" name="testCalcularPreco" time="0.0" />
+  <testcase classname="model.PassagemBarcoTest" name="testCalcularTempo" time="0.001" />
+  <testcase classname="model.PassagemBarcoTest" name="testGetCpf" time="0.001">
     <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at model.PassagemAviaoTest.testGetCpf(PassagemAviaoTest.java:219)
+	at model.PassagemBarcoTest.testGetCpf(PassagemBarcoTest.java:222)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testGetDistancia" time="0.002">
+  <testcase classname="model.PassagemBarcoTest" name="testGetDistancia" time="0.001">
     <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
-	at model.PassagemAviaoTest.testGetDistancia(PassagemAviaoTest.java:177)
+	at model.PassagemBarcoTest.testGetDistancia(PassagemBarcoTest.java:180)
 </failure>
   </testcase>
-  <testcase classname="model.PassagemAviaoTest" name="testCalcularDistancia" time="0.0" />
+  <testcase classname="model.PassagemBarcoTest" name="testCalcularDistancia" time="0.001" />
   <system-out><![CDATA[getPassagem
 getPreco
 getTempo

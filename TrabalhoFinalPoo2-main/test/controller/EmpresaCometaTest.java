@@ -19,6 +19,8 @@ import static org.junit.Assert.*;
  */
 public class EmpresaCometaTest {
     
+    private EmpresaCometa e;
+    
     public EmpresaCometaTest() {
     }
     
@@ -32,6 +34,7 @@ public class EmpresaCometaTest {
     
     @Before
     public void setUp() {
+        e = new EmpresaCometa();
     }
     
     @After
@@ -48,12 +51,11 @@ public class EmpresaCometaTest {
         int destino = 0;
         String nome = "";
         int cpf = 0;
-        EmpresaCometa instance = new EmpresaCometa();
+        
         Passagem expResult = null;
-        Passagem result = instance.criarPassagemOnibus(empresa, destino, nome, cpf);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Passagem result = e.criarPassagemOnibus(empresa, destino, nome, cpf);
+        assertNotEquals(expResult, result);
+      
     }
 
     /**
@@ -66,12 +68,10 @@ public class EmpresaCometaTest {
         int destino = 0;
         String nome = "";
         int cpf = 0;
-        EmpresaCometa instance = new EmpresaCometa();
+       
         Passagem expResult = null;
-        Passagem result = instance.criarPassagemAviao(empresa, destino, nome, cpf);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Passagem result = e.criarPassagemAviao(empresa, destino, nome, cpf);
+        assertNotEquals(expResult, result);
     }
 
     /**
@@ -84,12 +84,10 @@ public class EmpresaCometaTest {
         int destino = 0;
         String nome = "";
         int cpf = 0;
-        EmpresaCometa instance = new EmpresaCometa();
+       
         Passagem expResult = null;
-        Passagem result = instance.criarPassagemBarco(empresa, destino, nome, cpf);
+        Passagem result = e.criarPassagemBarco(empresa, destino, nome, cpf);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

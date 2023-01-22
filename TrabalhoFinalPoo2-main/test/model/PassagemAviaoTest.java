@@ -58,31 +58,39 @@ public class PassagemAviaoTest {
         assertNotEquals(expResult, result);
     }
 
-    /**
-     * Test of calcularTempo method, of class PassagemAviao.
-     */
     @Test
     public void testCalcularTempo() {
         System.out.println("calcularTempo");
-        int destino = 0;
-        PassagemAviao instance = new PassagemAviao();
-        instance.calcularTempo(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        a.calcularTempo(1);
+        assertTrue(a.getTempo()==1);
+        a.calcularTempo(2);
+        assertTrue(a.getTempo()==8);
+        a.calcularTempo(3);
+        assertTrue(a.getTempo()==4);
     }
 
-    /**
-     * Test of calcularPreco method, of class PassagemAviao.
-     */
+   
     @Test
     public void testCalcularPreco() {
         System.out.println("calcularPreco");
-        int empresa = 0;
-        int destino = 0;
-        PassagemAviao instance = new PassagemAviao();
-        instance.calcularPreco(empresa, destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int empresa = 1;
+        
+        a.calcularPreco(1, empresa);
+        assertTrue(a.getPreco()==400);
+        a.calcularPreco(2, empresa);
+        assertTrue(a.getPreco()==1140);
+        a.calcularPreco(3, empresa);
+        assertTrue(a.getPreco()==928);
+        
+        empresa = 2;
+        
+        a.calcularPreco(1, empresa);
+        assertTrue(a.getPreco()==256);
+        a.calcularPreco(2, empresa);
+        assertTrue(a.getPreco()==1300);
+        a.calcularPreco(3, empresa);
+        assertTrue(a.getPreco()==572);
     }
 
     /**
@@ -91,11 +99,12 @@ public class PassagemAviaoTest {
     @Test
     public void testCalcularDistancia() {
         System.out.println("calcularDistancia");
-        int destino = 0;
-        PassagemAviao instance = new PassagemAviao();
-        instance.calcularDistancia(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        a.calcularDistancia(1);
+        assertTrue(a.getDistancia()==434);
+        a.calcularDistancia(2);
+        assertTrue(a.getDistancia()==2364);
+        a.calcularDistancia(3);
+        assertTrue(a.getDistancia()==1159);
     }
 
     /**

@@ -19,6 +19,8 @@ import static org.junit.Assert.*;
  */
 public class EmpresaUniaoTest {
     
+    private EmpresaUniao u;
+    
     public EmpresaUniaoTest() {
     }
     
@@ -32,6 +34,7 @@ public class EmpresaUniaoTest {
     
     @Before
     public void setUp() {
+        u = new EmpresaUniao();
     }
     
     @After
@@ -48,17 +51,13 @@ public class EmpresaUniaoTest {
         int destino = 0;
         String nome = "";
         int cpf = 0;
-        EmpresaUniao instance = new EmpresaUniao();
+       
         Passagem expResult = null;
-        Passagem result = instance.criarPassagemOnibus(empresa, destino, nome, cpf);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Passagem result = u.criarPassagemOnibus(empresa, destino, nome, cpf);
+        assertNotEquals(expResult, result);
     }
 
-    /**
-     * Test of criarPassagemAviao method, of class EmpresaUniao.
-     */
+  
     @Test
     public void testCriarPassagemAviao() {
         System.out.println("criarPassagemAviao");
@@ -66,12 +65,10 @@ public class EmpresaUniaoTest {
         int destino = 0;
         String nome = "";
         int cpf = 0;
-        EmpresaUniao instance = new EmpresaUniao();
+      
         Passagem expResult = null;
-        Passagem result = instance.criarPassagemAviao(empresa, destino, nome, cpf);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Passagem result = u.criarPassagemAviao(empresa, destino, nome, cpf);
+        assertNotEquals(expResult, result);
     }
 
     /**
@@ -84,12 +81,11 @@ public class EmpresaUniaoTest {
         int destino = 0;
         String nome = "";
         int cpf = 0;
-        EmpresaUniao instance = new EmpresaUniao();
+       
         Passagem expResult = null;
-        Passagem result = instance.criarPassagemBarco(empresa, destino, nome, cpf);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Passagem result = u.criarPassagemBarco(empresa, destino, nome, cpf);
+        assertNotEquals(expResult, result);
+      
     }
     
 }

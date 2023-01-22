@@ -65,11 +65,13 @@ public class PassagemBarcoTest {
     @Test
     public void testCalcularTempo() {
         System.out.println("calcularTempo");
-        int destino = 0;
-        PassagemBarco instance = new PassagemBarco();
-        instance.calcularTempo(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        b.calcularTempo(1);
+        assertTrue(b.getTempo()==3);
+        b.calcularTempo(2);
+        assertTrue(b.getTempo()==30);
+        b.calcularTempo(3);
+        assertTrue(b.getTempo()==18);
     }
 
     /**
@@ -78,12 +80,24 @@ public class PassagemBarcoTest {
     @Test
     public void testCalcularPreco() {
         System.out.println("calcularPreco");
-        int destino = 0;
-        int empresa = 0;
-        PassagemBarco instance = new PassagemBarco();
-        instance.calcularPreco(destino, empresa);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        int empresa = 1;
+        
+        b.calcularPreco(1, empresa);
+        assertTrue(b.getPreco()==632);
+        b.calcularPreco(2, empresa);
+        assertTrue(b.getPreco()==952);
+        b.calcularPreco(3, empresa);
+        assertTrue(b.getPreco()==789);
+        
+        empresa = 2;
+        
+        b.calcularPreco(1, empresa);
+        assertTrue(b.getPreco()==963);
+        b.calcularPreco(2, empresa);
+        assertTrue(b.getPreco()==510);
+        b.calcularPreco(3, empresa);
+        assertTrue(b.getPreco()==999);
     }
 
     /**
@@ -92,11 +106,13 @@ public class PassagemBarcoTest {
     @Test
     public void testCalcularDistancia() {
         System.out.println("calcularDistancia");
-        int destino = 0;
-        PassagemBarco instance = new PassagemBarco();
-        instance.calcularDistancia(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        b.calcularDistancia(1);
+        assertTrue(b.getDistancia()==600);
+        b.calcularDistancia(2);
+        assertTrue(b.getDistancia()==2600);
+        b.calcularDistancia(3);
+        assertTrue(b.getDistancia()==1400);
+        b.calcularDistancia(1);
     }
 
     /**
@@ -105,12 +121,7 @@ public class PassagemBarcoTest {
     @Test
     public void testGetPassagem() {
         System.out.println("getPassagem");
-        PassagemBarco instance = new PassagemBarco();
-        PassagemBarco expResult = null;
-        PassagemBarco result = instance.getPassagem();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**

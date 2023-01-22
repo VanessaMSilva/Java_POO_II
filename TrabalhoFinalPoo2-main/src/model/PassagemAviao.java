@@ -55,7 +55,7 @@ public class PassagemAviao extends Passagem{
     
    @Override
    //calcula o preço de viagem a partir do destino
-    public void calcularPreco(int empresa, int destino) {
+    public void calcularPreco(int destino, int empresa) {
                
         switch(empresa){
             case 1:

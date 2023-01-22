@@ -80,30 +80,42 @@ public class PassagemOnibusTest {
     @Test
     public void testCalcularPreco() {
         System.out.println("calcularPreco");
-        int destino = 0;
-        int empresa = 0;
-        PassagemOnibus instance = new PassagemOnibus();
-        instance.calcularPreco(destino, empresa);
+
+        int empresa = 1;
+        
+        o.calcularPreco(1, empresa);
+        assertTrue(o.getPreco()==200.00);
+        o.calcularPreco(2, empresa);
+        assertTrue(o.getPreco()==950.00);
+        o.calcularPreco(3, empresa);
+        assertTrue(o.getPreco()==774);
+        
+        empresa = 2;
+        
+        o.calcularPreco(1, empresa);
+        assertTrue(o.getPreco()==195);
+        o.calcularPreco(2, empresa);
+        assertTrue(o.getPreco()==950.00);
+        o.calcularPreco(3, empresa);
+        assertTrue(o.getPreco()==720);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
-    /**
-     * Test of calcularDistancia method, of class PassagemOnibus.
-     */
+ 
     @Test
     public void testCalcularDistancia() {
         System.out.println("calcularDistancia");
-        int destino = 0;
-        PassagemOnibus instance = new PassagemOnibus();
-        instance.calcularDistancia(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        o.calcularDistancia(1);
+        assertTrue(o.getDistancia()==434);
+        o.calcularDistancia(2);
+        assertTrue(o.getDistancia()==2900);
+        o.calcularDistancia(3);
+        assertTrue(o.getDistancia()==1230);
+        o.calcularDistancia(1);
     }
 
-    /**
-     * Test of getPassagem method, of class PassagemOnibus.
-     */
     @Test
     public void testGetPassagem() {
         System.out.println("getPassagem");
@@ -114,11 +126,10 @@ public class PassagemOnibusTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-
     /**
      * Test of gerarId method, of class PassagemOnibus.
      */
-    @Test
+    /*@Test
     public void testGerarId() {
         System.out.println("gerarId");
         PassagemOnibus instance = new PassagemOnibus();
@@ -127,11 +138,12 @@ public class PassagemOnibusTest {
         assertNotEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of toString method, of class PassagemOnibus.
      */
+    /*
     @Test
     public void testToString() {
         System.out.println("toString");
@@ -146,7 +158,7 @@ public class PassagemOnibusTest {
     /**
      * Test of getPreco method, of class PassagemOnibus.
      */
-    @Test
+    /*@Test
     public void testGetPreco() {
         System.out.println("getPreco");
         PassagemOnibus instance = new PassagemOnibus();
@@ -160,7 +172,7 @@ public class PassagemOnibusTest {
     /**
      * Test of getDistancia method, of class PassagemOnibus.
      */
-    @Test
+    /*@Test
     public void testGetDistancia() {
         System.out.println("getDistancia");
         PassagemOnibus instance = new PassagemOnibus();
@@ -174,7 +186,7 @@ public class PassagemOnibusTest {
     /**
      * Test of getTempo method, of class PassagemOnibus.
      */
-    @Test
+    /*@Test
     public void testGetTempo() {
         System.out.println("getTempo");
         PassagemOnibus instance = new PassagemOnibus();
@@ -188,7 +200,7 @@ public class PassagemOnibusTest {
     /**
      * Test of getNome method, of class PassagemOnibus.
      */
-    @Test
+    /*@Test
     public void testGetNome() {
         System.out.println("getNome");
         PassagemOnibus instance = new PassagemOnibus();
@@ -202,7 +214,7 @@ public class PassagemOnibusTest {
     /**
      * Test of getCpf method, of class PassagemOnibus.
      */
-    @Test
+    /*@Test
     public void testGetCpf() {
         System.out.println("getCpf");
         PassagemOnibus instance = new PassagemOnibus();
@@ -216,8 +228,8 @@ public class PassagemOnibusTest {
     /**
      * Test of getId method, of class PassagemOnibus.
      */
-    @Test
-    public void testGetId() {
+    /*@Test
+    /*public void testGetId() {
         System.out.println("getId");
         PassagemOnibus instance = new PassagemOnibus();
         UUID expResult = null;
@@ -227,5 +239,5 @@ public class PassagemOnibusTest {
     }
 
 
-    
+    */
 }
