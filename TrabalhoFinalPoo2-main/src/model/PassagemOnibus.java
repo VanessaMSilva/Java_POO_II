@@ -10,15 +10,8 @@ import java.util.UUID;
  *
  * @author guilh
  */
-public class PassagemOnibus implements Passagem{
+public class PassagemOnibus extends Passagem{
 
-    private float preco;
-    private float distancia;
-    private int tempo;
-    private String nome;
-    private int cpf;
-    private UUID id;
-    private int empresa;
     
     @Override
     //Gera uma passagem de onibus e retorna usando todos os parametros + dados gerados na classe

@@ -11,15 +11,8 @@ import java.util.UUID;
  *
  * @author vanes
  */
-public class AdapterAluguel implements Passagem{
+public class AdapterAluguel extends Passagem{
 
-    private float preco;
-    private float distancia;
-    private int tempo;
-    private String nome;
-    private int cpf;
-    private UUID id;
-    private int empresa;
     private AluguelCarro ac = new AluguelCarro();
     
     

@@ -10,13 +10,8 @@ import java.util.UUID;
  *
  * @author guilh
  */
-public class PassagemBarco implements Passagem{
-    private float preco;
-    private float distancia;
-    private int tempo;
-    private String nome;
-    private int cpf;
-    private UUID id;
+public class PassagemBarco extends Passagem{
+ 
     
     @Override
     //Gera uma passagem de onibus e retorna usando todos os parametros + dados gerados na classe

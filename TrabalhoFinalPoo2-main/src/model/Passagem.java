@@ -12,7 +12,15 @@ import java.util.UUID;
  *
  * @author guilh
  */
-public interface Passagem {
+public abstract class Passagem {
+    
+    
+    protected float preco;
+    protected float distancia;
+    protected int tempo;
+    protected String nome;
+    protected int cpf;
+    protected UUID id;
     
     public abstract void calcularPreco(int destino, int empresa);
     public  abstract void calcularDistancia(int destino);
