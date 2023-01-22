@@ -93,9 +93,6 @@ public class PassagemAviaoTest {
         assertTrue(a.getPreco()==572);
     }
 
-    /**
-     * Test of calcularDistancia method, of class PassagemAviao.
-     */
     @Test
     public void testCalcularDistancia() {
         System.out.println("calcularDistancia");
@@ -107,130 +104,13 @@ public class PassagemAviaoTest {
         assertTrue(a.getDistancia()==1159);
     }
 
-    /**
-     * Test of getPassagem method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetPassagem() {
-        System.out.println("getPassagem");
-        PassagemAviao instance = new PassagemAviao();
-        PassagemAviao expResult = null;
-        PassagemAviao result = instance.getPassagem();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of gerarId method, of class PassagemAviao.
-     */
     @Test
     public void testGerarId() {
         System.out.println("gerarId");
         PassagemAviao instance = new PassagemAviao();
         UUID expResult = null;
         UUID result = instance.gerarId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class PassagemAviao.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        PassagemAviao instance = new PassagemAviao();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getPreco method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetPreco() {
-        System.out.println("getPreco");
-        PassagemAviao instance = new PassagemAviao();
-        float expResult = 0.0F;
-        float result = instance.getPreco();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDistancia method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetDistancia() {
-        System.out.println("getDistancia");
-        PassagemAviao instance = new PassagemAviao();
-        float expResult = 0.0F;
-        float result = instance.getDistancia();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getTempo method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetTempo() {
-        System.out.println("getTempo");
-        PassagemAviao instance = new PassagemAviao();
-        int expResult = 0;
-        int result = instance.getTempo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getNome method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetNome() {
-        System.out.println("getNome");
-        PassagemAviao instance = new PassagemAviao();
-        String expResult = "";
-        String result = instance.getNome();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCpf method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetCpf() {
-        System.out.println("getCpf");
-        PassagemAviao instance = new PassagemAviao();
-        int expResult = 0;
-        int result = instance.getCpf();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getId method, of class PassagemAviao.
-     */
-    @Test
-    public void testGetId() {
-        System.out.println("getId");
-        PassagemAviao instance = new PassagemAviao();
-        UUID expResult = null;
-        UUID result = instance.getId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotEquals(expResult, result);
     }
     
 }

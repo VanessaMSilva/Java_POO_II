@@ -115,125 +115,14 @@ public class PassagemBarcoTest {
         b.calcularDistancia(1);
     }
 
-    /**
-     * Test of getPassagem method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetPassagem() {
-        System.out.println("getPassagem");
-      
-    }
-
-    /**
-     * Test of gerarId method, of class PassagemBarco.
-     */
+  
     @Test
     public void testGerarId() {
         System.out.println("gerarId");
         PassagemBarco instance = new PassagemBarco();
         UUID expResult = null;
         UUID result = instance.gerarId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class PassagemBarco.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        PassagemBarco instance = new PassagemBarco();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getPreco method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetPreco() {
-        System.out.println("getPreco");
-        PassagemBarco instance = new PassagemBarco();
-        float expResult = 0.0F;
-        float result = instance.getPreco();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDistancia method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetDistancia() {
-        System.out.println("getDistancia");
-        PassagemBarco instance = new PassagemBarco();
-        float expResult = 0.0F;
-        float result = instance.getDistancia();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getTempo method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetTempo() {
-        System.out.println("getTempo");
-        PassagemBarco instance = new PassagemBarco();
-        int expResult = 0;
-        int result = instance.getTempo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getNome method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetNome() {
-        System.out.println("getNome");
-        PassagemBarco instance = new PassagemBarco();
-        String expResult = "";
-        String result = instance.getNome();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCpf method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetCpf() {
-        System.out.println("getCpf");
-        PassagemBarco instance = new PassagemBarco();
-        int expResult = 0;
-        int result = instance.getCpf();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getId method, of class PassagemBarco.
-     */
-    @Test
-    public void testGetId() {
-        System.out.println("getId");
-        PassagemBarco instance = new PassagemBarco();
-        UUID expResult = null;
-        UUID result = instance.getId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotEquals(expResult, result);
     }
     
 }

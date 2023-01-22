@@ -116,128 +116,13 @@ public class PassagemOnibusTest {
         o.calcularDistancia(1);
     }
 
-    @Test
-    public void testGetPassagem() {
-        System.out.println("getPassagem");
-        PassagemOnibus instance = new PassagemOnibus();
-        PassagemOnibus expResult = null;
-        PassagemOnibus result = instance.getPassagem();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    /**
-     * Test of gerarId method, of class PassagemOnibus.
-     */
-    /*@Test
+    
+    
     public void testGerarId() {
         System.out.println("gerarId");
-        PassagemOnibus instance = new PassagemOnibus();
-        UUID expResult = null;
-        UUID result = instance.gerarId();
-        assertNotEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }*/
-
-    /**
-     * Test of toString method, of class PassagemOnibus.
-     */
-    /*
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        PassagemOnibus instance = new PassagemOnibus();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getPreco method, of class PassagemOnibus.
-     */
-    /*@Test
-    public void testGetPreco() {
-        System.out.println("getPreco");
-        PassagemOnibus instance = new PassagemOnibus();
-        float expResult = 0.0F;
-        float result = instance.getPreco();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getDistancia method, of class PassagemOnibus.
-     */
-    /*@Test
-    public void testGetDistancia() {
-        System.out.println("getDistancia");
-        PassagemOnibus instance = new PassagemOnibus();
-        float expResult = 0.0F;
-        float result = instance.getDistancia();
-        assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getTempo method, of class PassagemOnibus.
-     */
-    /*@Test
-    public void testGetTempo() {
-        System.out.println("getTempo");
-        PassagemOnibus instance = new PassagemOnibus();
-        int expResult = 0;
-        int result = instance.getTempo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getNome method, of class PassagemOnibus.
-     */
-    /*@Test
-    public void testGetNome() {
-        System.out.println("getNome");
-        PassagemOnibus instance = new PassagemOnibus();
-        String expResult = "";
-        String result = instance.getNome();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getCpf method, of class PassagemOnibus.
-     */
-    /*@Test
-    public void testGetCpf() {
-        System.out.println("getCpf");
-        PassagemOnibus instance = new PassagemOnibus();
-        int expResult = 0;
-        int result = instance.getCpf();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getId method, of class PassagemOnibus.
-     */
-    /*@Test
-    /*public void testGetId() {
-        System.out.println("getId");
-        PassagemOnibus instance = new PassagemOnibus();
-        UUID expResult = null;
-        UUID result = instance.getId();
         
-        assertEquals(expResult, result);
+        UUID expResult = null;
+        UUID result = o.gerarId();
+        assertNotEquals(expResult, result);
     }
-
-
-    */
 }
