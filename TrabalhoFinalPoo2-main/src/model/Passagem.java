@@ -12,7 +12,7 @@ import java.util.UUID;
  *
  * @author guilh
  */
-public abstract class Passagem {
+public interface Passagem {
     
     public abstract void calcularPreco(int destino, int empresa);
     public  abstract void calcularDistancia(int destino);

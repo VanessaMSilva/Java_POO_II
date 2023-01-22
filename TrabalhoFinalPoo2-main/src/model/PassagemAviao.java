@@ -10,8 +10,8 @@ import java.util.UUID;
  *
  * @author guilh
  */
-public class PassagemAviao extends Passagem{
-     private float preco;
+public class PassagemAviao implements Passagem{
+    private float preco;
     private float distancia;
     private int tempo;
     private String nome;

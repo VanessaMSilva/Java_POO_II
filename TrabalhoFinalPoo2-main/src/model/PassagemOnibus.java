@@ -10,7 +10,7 @@ import java.util.UUID;
  *
  * @author guilh
  */
-public class PassagemOnibus extends Passagem{
+public class PassagemOnibus implements Passagem{
 
     private float preco;
     private float distancia;
