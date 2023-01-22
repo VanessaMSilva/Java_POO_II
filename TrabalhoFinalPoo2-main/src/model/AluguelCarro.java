@@ -49,7 +49,7 @@ public class AluguelCarro {
        return this.precoGasolina;
     }
     
-    public float Preco(int empresa) {
+    public float custoAluguel(int empresa) {
                
       switch(empresa){
             case 1:
